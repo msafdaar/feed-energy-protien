@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import options from './base.json'
-import uniqid from 'uniqid'
 function App() {
   let [formula, setFormula] = useState([{}]);
   function changeHandler (values){
