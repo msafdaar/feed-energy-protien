@@ -1,7 +1,5 @@
 [
     {
-        "English Name": "Bajra",
-        "Urdu Name": "ﻩﺭﺟﺎﺑ",
         "DRY MATTER %": 88,
         "Energy": 3000,
         "CP": 10,
@@ -41,8 +39,6 @@
         "urdu": "ﻩﺭﺟﺎﺑ"
     },
     {
-        "English Name": "Banola Meal",
-        "Urdu Name": "بنولا میل",
         "DRY MATTER %": 90,
         "Energy": 2000,
         "CP": 38,
@@ -82,8 +78,6 @@
         "urdu": "بنولا میل"
     },
     {
-        "English Name": "Bone Ash",
-        "Urdu Name": "بون ایش",
         "DRY MATTER %": 98,
         "Energy": 0,
         "CP": 0,
@@ -123,8 +117,6 @@
         "urdu": "بون ایش"
     },
     {
-        "English Name": "Bone Meal",
-        "Urdu Name": "ﻥﻭﺑ",
         "DRY MATTER %": 96,
         "Energy": 0,
         "CP": 0,
@@ -164,8 +156,6 @@
         "urdu": "ﻥﻭﺑ"
     },
     {
-        "English Name": "Canola Meal",
-        "Urdu Name": "کینولہ میل",
         "DRY MATTER %": 90,
         "Energy": 1900,
         "CP": 35,
@@ -205,8 +195,6 @@
         "urdu": "کینولہ میل"
     },
     {
-        "English Name": "Chari",
-        "Urdu Name": "ﻯﺭﭼ",
         "DRY MATTER %": 88,
         "Energy": 3200,
         "CP": 10,
@@ -246,8 +234,6 @@
         "urdu": "ﻯﺭﭼ"
     },
     {
-        "English Name": "Chips",
-        "Urdu Name": "چپس",
         "DRY MATTER %": 96,
         "Energy": 0,
         "CP": 0,
@@ -287,8 +273,6 @@
         "urdu": "چپس"
     },
     {
-        "English Name": "Chokar",
-        "Urdu Name": "ﺭﮐﻭﭼ",
         "DRY MATTER %": 87,
         "Energy": 1500,
         "CP": 13,
@@ -328,8 +312,6 @@
         "urdu": "ﺭﮐﻭﭼ"
     },
     {
-        "English Name": "DCP",
-        "Urdu Name": "ڈی سی پی",
         "DRY MATTER %": 85,
         "Energy": 0,
         "CP": 0,
@@ -369,8 +351,6 @@
         "urdu": "ڈی سی پی"
     },
     {
-        "English Name": "DLM Liquid",
-        "Urdu Name": "ڈی ایل ایم لیکوئڈ",
         "DRY MATTER %": 88,
         "Energy": 0,
         "CP": 0,
@@ -410,8 +390,6 @@
         "urdu": "ڈی ایل ایم لیکوئڈ"
     },
     {
-        "English Name": "Feather Meal",
-        "Urdu Name": "ﻝﻳﻣﺭﺪﻳﻓ",
         "DRY MATTER %": 90,
         "Energy": 3000,
         "CP": 48.5,
@@ -451,8 +429,6 @@
         "urdu": "ﻝﻳﻣﺭﺪﻳﻓ"
     },
     {
-        "English Name": "Fish Meal 48",
-        "Urdu Name": "فش میل / 48 پروٹین",
         "DRY MATTER %": 90,
         "Energy": 2750,
         "CP": 48,
@@ -492,8 +468,6 @@
         "urdu": "فش میل / 48 پروٹین"
     },
     {
-        "English Name": "Fish Meal 50",
-        "Urdu Name": "فش میل / 50 پروٹین",
         "DRY MATTER %": 90,
         "Energy": 2800,
         "CP": 50,
@@ -533,8 +507,6 @@
         "urdu": "فش میل / 50 پروٹین"
     },
     {
-        "English Name": "Fish Meal 52",
-        "Urdu Name": "فش میل / 52 پروٹین",
         "DRY MATTER %": 90,
         "Energy": 2850,
         "CP": 52,
@@ -574,8 +546,6 @@
         "urdu": "فش میل / 52 پروٹین"
     },
     {
-        "English Name": "Gandam",
-        "Urdu Name": "ﻡﺪﻧﮔ",
         "DRY MATTER %": 90,
         "Energy": 3050,
         "CP": 11.5,
@@ -615,8 +585,6 @@
         "urdu": "ﻡﺪﻧﮔ"
     },
     {
-        "English Name": "Gluten 30",
-        "Urdu Name": "گلوٹن 30",
         "DRY MATTER %": 90,
         "Energy": 1800,
         "CP": 24,
@@ -656,8 +624,6 @@
         "urdu": "گلوٹن 30"
     },
     {
-        "English Name": "Gluten 60",
-        "Urdu Name": "گلوٹن 60",
         "DRY MATTER %": 88,
         "Energy": 3500,
         "CP": 55,
@@ -697,8 +663,6 @@
         "urdu": "گلوٹن 60"
     },
     {
-        "English Name": "Guar Meal",
-        "Urdu Name": "گوار میل",
         "DRY MATTER %": 92,
         "Energy": 2100,
         "CP": 39,
@@ -738,8 +702,6 @@
         "urdu": "گوار میل"
     },
     {
-        "English Name": "K2CO3",
-        "Urdu Name": "پوٹاشیم کاربونیٹ",
         "DRY MATTER %": 0,
         "Energy": 0,
         "CP": 0,
@@ -779,8 +741,6 @@
         "urdu": "پوٹاشیم کاربونیٹ"
     },
     {
-        "English Name": "K2SO4",
-        "Urdu Name": "پوٹاشیم سلفیٹ",
         "DRY MATTER %": 0,
         "Energy": 0,
         "CP": 0,
@@ -820,8 +780,6 @@
         "urdu": "پوٹاشیم سلفیٹ"
     },
     {
-        "English Name": "Lyscine HCL",
-        "Urdu Name": "HCL / ﻥﻳﺳﺋﻻ",
         "DRY MATTER %": 99,
         "Energy": 3980,
         "CP": 96,
@@ -861,8 +819,6 @@
         "urdu": "HCL / ﻥﻳﺳﺋﻻ"
     },
     {
-        "English Name": "Lyscine Sulphate",
-        "Urdu Name": "لائسین سلفیٹ",
         "DRY MATTER %": 99,
         "Energy": 3350,
         "CP": 56,
@@ -902,8 +858,6 @@
         "urdu": "لائسین سلفیٹ"
     },
     {
-        "English Name": "Makai 10",
-        "Urdu Name": "مکئی / 10 موسچر",
         "DRY MATTER %": 90,
         "Energy": 3350,
         "CP": 8.5,
@@ -943,8 +897,6 @@
         "urdu": "مکئی / 10 موسچر"
     },
     {
-        "English Name": "Makai 12",
-        "Urdu Name": "مکئی / 12 موسچر",
         "DRY MATTER %": 88,
         "Energy": 3300,
         "CP": 8.25,
@@ -984,8 +936,6 @@
         "urdu": "مکئی / 12 موسچر"
     },
     {
-        "English Name": "Makai 14",
-        "Urdu Name": "مکئی / 14 موسچر",
         "DRY MATTER %": 86,
         "Energy": 3250,
         "CP": 8,
@@ -1025,8 +975,6 @@
         "urdu": "مکئی / 14 موسچر"
     },
     {
-        "English Name": "MCP",
-        "Urdu Name": "ایم سی پی",
         "DRY MATTER %": 98,
         "Energy": 0,
         "CP": 0,
@@ -1066,8 +1014,6 @@
         "urdu": "ایم سی پی"
     },
     {
-        "English Name": "Methailine",
-        "Urdu Name": "میتھائلین",
         "DRY MATTER %": 99,
         "Energy": 5020,
         "CP": 59,
@@ -1107,8 +1053,6 @@
         "urdu": "میتھائلین"
     },
     {
-        "English Name": "MHA CA",
-        "Urdu Name": "MHA CA",
         "DRY MATTER %": 96,
         "Energy": 0,
         "CP": 0,
@@ -1148,8 +1092,6 @@
         "urdu": "MHA CA"
     },
     {
-        "English Name": "Naku",
-        "Urdu Name": "ﻭﻛﻧ",
         "DRY MATTER %": 90,
         "Energy": 3300,
         "CP": 8.5,
@@ -1189,8 +1131,6 @@
         "urdu": "ﻭﻛﻧ"
     },
     {
-        "English Name": "Namak",
-        "Urdu Name": "نمک",
         "DRY MATTER %": 0,
         "Energy": 0,
         "CP": 0,
@@ -1230,8 +1170,6 @@
         "urdu": "نمک"
     },
     {
-        "English Name": "Oil",
-        "Urdu Name": "ﻝﻳﺗ",
         "DRY MATTER %": 99,
         "Energy": 8800,
         "CP": 0,
@@ -1271,8 +1209,6 @@
         "urdu": "ﻝﻳﺗ"
     },
     {
-        "English Name": "Premix",
-        "Urdu Name": "پری مکس",
         "DRY MATTER %": 0,
         "Energy": 0,
         "CP": 0,
@@ -1312,8 +1248,6 @@
         "urdu": "پری مکس"
     },
     {
-        "English Name": "Rice Polish 15",
-        "Urdu Name": "رائس پالش / 15",
         "DRY MATTER %": 92,
         "Energy": 2600,
         "CP": 11,
@@ -1353,8 +1287,6 @@
         "urdu": "رائس پالش / 15"
     },
     {
-        "English Name": "Rice Polish 17",
-        "Urdu Name": "رائس پالش / 17",
         "DRY MATTER %": 92,
         "Energy": 2700,
         "CP": 11,
@@ -1394,8 +1326,6 @@
         "urdu": "رائس پالش / 17"
     },
     {
-        "English Name": "Rice Polish 19",
-        "Urdu Name": "رائس پالش / 19",
         "DRY MATTER %": 92,
         "Energy": 2800,
         "CP": 11,
@@ -1435,8 +1365,6 @@
         "urdu": "رائس پالش / 19"
     },
     {
-        "English Name": "Sheera",
-        "Urdu Name": "ﻩﺭﻳﺷ",
         "DRY MATTER %": 75,
         "Energy": 1900,
         "CP": 3,
@@ -1476,8 +1404,6 @@
         "urdu": "ﻩﺭﻳﺷ"
     },
     {
-        "English Name": "Soda",
-        "Urdu Name": "سوڈا",
         "DRY MATTER %": 0,
         "Energy": 0,
         "CP": 0,
@@ -1517,8 +1443,6 @@
         "urdu": "سوڈا"
     },
     {
-        "English Name": "Soyabean 44",
-        "Urdu Name": "سویابین / 44 پروٹین",
         "DRY MATTER %": 90,
         "Energy": 2200,
         "CP": 44,
@@ -1558,8 +1482,6 @@
         "urdu": "سویابین / 44 پروٹین"
     },
     {
-        "English Name": "Soyabean 46",
-        "Urdu Name": "سویابین / 46 پروٹین",
         "DRY MATTER %": 90,
         "Energy": 2250,
         "CP": 46,
@@ -1599,8 +1521,6 @@
         "urdu": "سویابین / 46 پروٹین"
     },
     {
-        "English Name": "Sunflower 24",
-        "Urdu Name": "سن فلاور / 24 پروٹین",
         "DRY MATTER %": 24,
         "Energy": 1600,
         "CP": 24,
@@ -1640,8 +1560,6 @@
         "urdu": "سن فلاور / 24 پروٹین"
     },
     {
-        "English Name": "Sunflower 28",
-        "Urdu Name": "سن فلاور / 28 پروٹین",
         "DRY MATTER %": 28,
         "Energy": 1700,
         "CP": 28,
@@ -1681,8 +1599,6 @@
         "urdu": "سن فلاور / 28 پروٹین"
     },
     {
-        "English Name": "THREONINE",
-        "Urdu Name": "تھریونین",
         "DRY MATTER %": 99,
         "Energy": 3490,
         "CP": 74,
@@ -1722,8 +1638,6 @@
         "urdu": "تھریونین"
     },
     {
-        "English Name": "Torya Meal",
-        "Urdu Name": "توریا میل",
         "DRY MATTER %": 90,
         "Energy": 1800,
         "CP": 35,
@@ -1763,8 +1677,6 @@
         "urdu": "توریا میل"
     },
     {
-        "English Name": "TRYPTOPHAN",
-        "Urdu Name": "ٹرپٹوفین",
         "DRY MATTER %": 99,
         "Energy": 5850,
         "CP": 86,
