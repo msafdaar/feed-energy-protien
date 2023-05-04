@@ -1,12 +1,7 @@
 import { useState } from 'react'
 import Select from 'react-select'
-import rawData from './base.json'
+import options from './base.json'
 function App() {
-  let options = rawData.map(item=>{
-    item.label = item["English Name"];
-    item.value = item["English Name"];
-    return item
-  })
   return (
     <div className='w-96 bg-fuchsia-50 border border-fuchsia-700 shadow-md p-10 rounded-md'>
     <div className='flex w-full'>
