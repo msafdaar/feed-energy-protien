@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Select from 'react-select'
 import options from './base.json'
+import Summary from './Summary';
 function App() {
   let [formula, setFormula] = useState([{}]);
   function changeHandler (values){
@@ -24,7 +25,10 @@ function App() {
     }
   }
   return (
-    <div className=' bg-fuchsia-50 border border-fuchsia-700 shadow-md p-10 rounded-md'>
+    <div>
+
+    <div className=' bg-fuchsia-50 border border-fuchsia-700 shadow-md p-5 rounded-md'>
+    <h2 className='text-2xl mb-2'>Formula items</h2>
     <div className='flex gap-1 mb-1'>
       <div className='w-2/4'>Item</div>
       <div className='w-1/4'>Qty</div>
@@ -42,6 +46,8 @@ function App() {
       <button className='bg-fuchsia-200 p-1 rounded-md hover:bg-fuchsia-300 active:ring' onClick={()=>{addItem(5)}}>Add 5 Items</button>
     </div>
    </div>
+   <Summary formula= {formula}></Summary>
+  </div>
   )
 }
 
