@@ -1,12 +1,13 @@
 function Summary({formula}) {
     let summaryArray = makeSummary(formula);
     console.log(formula)
-    return ( <div className='border border-black'>
-    <h2 className='text-2xl mb-2'>Quick Report</h2>
+    return ( <div className='flex flex-wrap gap-y-2 sm:flex-col '>
+    <h2 className='text-2xl mb-2 w-full'>Summary</h2>
     {summaryArray.map((item, index)=>{
-        return <div key={index}>
+        return <div key={index} className="w-1/3 sm:w-full">
             <div>{item[0]}</div>
-            <div>{item[1]}</div>
+            <div className="font-semibold">{item[1]}</div>
+            <hr></hr>
         </div>
     })}
     </div> );
