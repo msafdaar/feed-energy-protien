@@ -1,7 +1,7 @@
 function Summary({formula}) {
     let summaryArray = makeSummary(formula);
     console.log(formula)
-    return ( <div className=' bg-violet-50 border border-violet-700 shadow-md p-5 rounded-md mt-5'>
+    return ( <div className='border border-black'>
     <h2 className='text-2xl mb-2'>Quick Report</h2>
     {summaryArray.map((item, index)=>{
         return <div key={index}>
@@ -38,21 +38,15 @@ function Summary({formula}) {
         let totalCost = formulaCopy.reduce((total, item)=>{return total + (item.qty*item.rate)}, 0);
         //cost per bag (50kg)
         let costPer50Kg = totalCost/totalQty*50 || 0;
-        //Dry matter
-        let dryMatter = getFieldTotal("DRY MATTER %", formulaCopy);
-        //protien
-        let protien = getFieldTotal("CP", formulaCopy);
-        //energy
-        let energy = getFieldTotal("Energy", formulaCopy);
         return [
             ["Items Count", numberOfItems.toFixed(2)],
             ["Total Weight", totalQty.toFixed(2)],
             ["Total Cost", totalCost.toFixed(2)],
             ["Cost per 50Kg", costPer50Kg.toFixed(2)],
-            ["Dry Matter %", dryMatter.toFixed(2)],
-            ["Protien %", protien.toFixed(2)],
-            ["Energy", energy.toFixed(2)],
-
+            ["Dry Matter %", getFieldTotal("DRY MATTER %", formulaCopy).toFixed(2)],
+            ["Protien %", getFieldTotal("CP", formulaCopy).toFixed(2)],
+            ["Energy", getFieldTotal("Energy", formulaCopy).toFixed(2)],
+            ["Calcium", getFieldTotal("CALCIUM", formulaCopy).toFixed(2)],
         ]
     }
 }

@@ -468,7 +468,7 @@ function App() {
     </div>
     {formula.map((item, index)=>{
       return <div className='flex gap-1 mb-1' key={index}>
-      <Select className='w-2/4' options={options} isClearable={true} onChange={(value) => changeHandler({value, index,inputType: "item"})} data-item-index={index} data-input-type = "item"></Select>
+      <Select className='w-2/4' options={options} isClearable={true} defaultValue={item.item} onChange={(value) => changeHandler({value, index,inputType: "item"})} data-item-index={index} data-input-type = "item"></Select>
       <input className='w-1/4 border rounded-md px-2' type='number' min="0" value={item.qty ? item.qty.toString() : 0} onChange={(value) => changeHandler({value: parseFloat(value.target.value)||0, index,inputType: "qty"})} ></input>
       <input className='w-1/4 border rounded-md px-2' type='number' min="0" value={item.rate ? item.rate.toString() : 0} onChange={(value) => changeHandler({value: parseFloat(value.target.value)||0, index,inputType: "rate"})} ></input>
       </div>
