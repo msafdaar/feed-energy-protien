@@ -456,6 +456,13 @@ function App() {
       setFormula(formula.concat([{},{},{},{},{}]));
     }
   }
+  function removeItem(target){
+    console.log(target)
+    let newState = formula.filter((value, index)=> {
+      return index !== target
+    })
+    setFormula(newState);
+  }
   return (
     <div className=' bg-fuchsia-50 border border-fuchsia-700 shadow-md p-5 rounded-md flex gap-5 sm:gap-10 flex-col sm:flex-row'>
     <div className=''>
@@ -466,10 +473,11 @@ function App() {
       <div className='w-1/4'>Rate</div>
     </div>
     {formula.map((item, index)=>{
-      return <div className='flex gap-1 mb-1' key={index}>
+      return <div className='flex gap-1 mb-1 items-center' key={index}>
       <Select className='w-4/6' options={options} isClearable={true} defaultValue={item.item} onChange={(value) => changeHandler({value, index,inputType: "item"})} data-item-index={index} data-input-type = "item"></Select>
-      <input className='w-1/6 border rounded-md px-2' type='number' min="0" value={item.qty ? item.qty.toString() : 0} onChange={(value) => changeHandler({value: parseFloat(value.target.value)||0, index,inputType: "qty"})} ></input>
-      <input className='w-1/6 border rounded-md px-2' type='number' min="0" value={item.rate ? item.rate.toString() : 0} onChange={(value) => changeHandler({value: parseFloat(value.target.value)||0, index,inputType: "rate"})} ></input>
+      <input className='w-1/6 border h-10 rounded-md px-2' type='number' min="0" value={item.qty ? item.qty.toString() : 0} onChange={(value) => changeHandler({value: parseFloat(value.target.value)||0, index,inputType: "qty"})} ></input>
+      <input className='w-1/6 border h-10 rounded-md px-2' type='number' min="0" value={item.rate ? item.rate.toString() : 0} onChange={(value) => changeHandler({value: parseFloat(value.target.value)||0, index,inputType: "rate"})} ></input>
+      <button className='bg-white h-6 w-6 text-xs text-slate-600 font-bold active:ring hover:bg-slate-100 shadow-sm border rounded-full' onClick={()=>removeItem(index)}>x</button>
       </div>
     })}
     <div className='flex gap-2 mt-2'>
