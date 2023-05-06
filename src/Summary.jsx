@@ -43,10 +43,10 @@ function Summary({formula}) {
             ["Total Weight", totalQty.toFixed(2)],
             ["Total Cost", totalCost.toFixed(2)],
             ["Cost per 50Kg", costPer50Kg.toFixed(2)],
-            ["Dry Matter %", getFieldTotal("DRY MATTER %", formulaCopy).toFixed(2)],
-            ["Protien %", getFieldTotal("CP", formulaCopy).toFixed(2)],
-            ["Energy", getFieldTotal("Energy", formulaCopy).toFixed(2)],
-            ["Calcium", getFieldTotal("CALCIUM", formulaCopy).toFixed(2)],
+            ["Dry Matter %", (getFieldTotal("DRY MATTER %", formulaCopy)/totalQty*1000).toFixed(2)],
+            ["Protien %", (getFieldTotal("CP", formulaCopy)/totalQty*1000).toFixed(2)],
+            ["Energy", (getFieldTotal("Energy", formulaCopy)/totalQty*1000).toFixed(2)],
+            ["Calcium", (getFieldTotal("CALCIUM", formulaCopy)/totalQty*1000).toFixed(2)],
         ]
     }
 }
