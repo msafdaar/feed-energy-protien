@@ -1,6 +1,5 @@
 function Summary({formula}) {
     let summaryArray = makeSummary(formula);
-    console.log(formula)
     return ( <div className='flex flex-wrap gap-y-2 sm:flex-col '>
     <h2 className='text-2xl mb-2 w-full'>Summary</h2>
     {summaryArray.map((item, index)=>{
