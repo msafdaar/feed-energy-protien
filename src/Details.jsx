@@ -49,13 +49,13 @@ function Details({formula}) {
             "PHENYLALANINE",
             "D-PHENYLALANINE"
         ];
-        let headerRow = ["Item", "Qty", "Rate", "Cost"].concat(headersToCalculate);
+        let headerRow = ["", "Qty", "Rate", "Cost"].concat(headersToCalculate);
 
         let numberOfItems = formulaCopy.length;
         let totalQty = formulaCopy.reduce((total, item)=>{return total+item.qty}, 0);
         let totalCost = formulaCopy.reduce((total, item)=>{return total + (item.qty*item.rate)}, 0);
         let costPerKg = totalCost/totalQty || 0;
-        let totalsRow = [numberOfItems, totalQty, costPerKg, totalCost].concat(Array(headersToCalculate.length).fill(0));;
+        let totalsRow = [0, totalQty, costPerKg, totalCost].concat(Array(headersToCalculate.length).fill(0));;
         
         let tableBody = formulaCopy.map((item)=>{
             let row = [item.item.label, item.qty, item.rate, item.rate*item.qty];
@@ -79,7 +79,7 @@ function Details({formula}) {
     let tableHead = <thead>
         <tr>
             {detailsObject.header.map((cell)=>{
-                return <th className="bg-yellow-200 text-left w-44">{cell}</th>
+                return <th className="bg-yellow-200 text-right pr-4 w-44">{cell}</th>
             })}
         </tr>
     </thead>
@@ -87,7 +87,7 @@ function Details({formula}) {
     let tableBody = <tbody>
         {detailsObject.body.map((row)=>{
             return <tr> {row.map((cell)=>{
-                return <td className="border">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="border bg-yellow-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })} </tr>
         })}
     </tbody>
@@ -95,17 +95,19 @@ function Details({formula}) {
     let tableFoot = <tfoot>
         <tr>
         {detailsObject.totals.map((cell)=>{
-                return <td className="bg-yellow-200 font-bold">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="bg-yellow-200 font-bold text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })}            
         </tr>
     </tfoot>    
-    return ( <div className="w-full overflow-x-scroll my-5 bg-yellow-50 border border-yellow-700 shadow-md p-3 rounded-md">
-    <h2 className="text-2xl mb-2 w-full">Details</h2>
-    <table className="table-fixed w-full">
+    return ( <div>
+    <h2 className="text-2xl mt-5 mb-2">Detailed Report</h2>
+    <div className="w-full overflow-x-scroll mb-5 border rounded-md">
+    <table className="table-fixed w-full font-mono">
         {tableHead}
         {tableBody}
         {tableFoot}
     </table>
+    </div>
     </div>
     );
 }

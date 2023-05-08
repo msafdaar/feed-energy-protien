@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  td:first-child, th:first-child {
+    @apply  sticky left-0 font-bold pl-4 text-left;
+  }
+}
