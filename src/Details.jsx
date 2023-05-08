@@ -79,7 +79,7 @@ function Details({formula}) {
     let tableHead = <thead>
         <tr>
             {detailsObject.header.map((cell)=>{
-                return <th>{cell}</th>
+                return <th className="bg-yellow-200 text-left w-44">{cell}</th>
             })}
         </tr>
     </thead>
@@ -87,7 +87,7 @@ function Details({formula}) {
     let tableBody = <tbody>
         {detailsObject.body.map((row)=>{
             return <tr> {row.map((cell)=>{
-                return <td>{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="border">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })} </tr>
         })}
     </tbody>
@@ -95,15 +95,19 @@ function Details({formula}) {
     let tableFoot = <tfoot>
         <tr>
         {detailsObject.totals.map((cell)=>{
-                return <td>{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="bg-yellow-200 font-bold">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })}            
         </tr>
     </tfoot>    
-    return ( <table>
+    return ( <div className="w-full overflow-x-scroll my-5 bg-yellow-50 border border-yellow-700 shadow-md p-3 rounded-md">
+    <h2 className="text-2xl mb-2 w-full">Details</h2>
+    <table className="table-fixed w-full">
         {tableHead}
         {tableBody}
         {tableFoot}
-    </table>);
+    </table>
+    </div>
+    );
 }
 
 export default Details;
