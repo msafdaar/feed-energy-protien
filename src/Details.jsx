@@ -51,11 +51,11 @@ function Details({formula}) {
         ];
         let headerRow = ["", "Qty", "Rate", "Cost"].concat(headersToCalculate);
 
-        let numberOfItems = formulaCopy.length;
         let totalQty = formulaCopy.reduce((total, item)=>{return total+item.qty}, 0);
         let totalCost = formulaCopy.reduce((total, item)=>{return total + (item.qty*item.rate)}, 0);
         let costPerKg = totalCost/totalQty || 0;
-        let totalsRow = [0, totalQty, costPerKg, totalCost].concat(Array(headersToCalculate.length).fill(0));;
+        let totalsRow = ["Total", totalQty, costPerKg, totalCost].concat(Array(headersToCalculate.length).fill(0));;
+        let totalsRowAdjusted = ["Total Adjusted (1000Kg)", 1000, costPerKg, costPerKg*1000].concat(Array(headersToCalculate.length).fill(0));;
         
         let tableBody = formulaCopy.map((item)=>{
             let row = [item.item.label, item.qty, item.rate, item.rate*item.qty];
@@ -64,6 +64,7 @@ function Details({formula}) {
                 row.push(value);
                 //also add value to total. to prevent looping again
                 totalsRow[index+4] += value;
+                totalsRowAdjusted[index+4] += item.item[header]/1000*item.qty/totalQty*1000 || 0;
             })
             return row
         })
@@ -71,41 +72,41 @@ function Details({formula}) {
         return{
             header: headerRow,
             body: tableBody,
-            totals: totalsRow
+            totals: totalsRow,
+            adjusted: totalsRowAdjusted
         }
     }
     
     let detailsObject = calculateDetails(formula);
     let tableHead = <thead>
-        <tr>
-            {detailsObject.header.map((cell)=>{
+        <tr>{detailsObject.header.map((cell)=>{
                 return <th className="bg-yellow-200 text-right pr-4 w-44">{cell}</th>
-            })}
-        </tr>
+            })}</tr>
     </thead>
 
     let tableBody = <tbody>
         {detailsObject.body.map((row)=>{
-            return <tr> {row.map((cell)=>{
+            return <tr>{row.map((cell)=>{
                 return <td className="border bg-yellow-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
-            })} </tr>
+            })}</tr>
         })}
     </tbody>
 
     let tableFoot = <tfoot>
-        <tr>
-        {detailsObject.totals.map((cell)=>{
+        <tr>{
+            detailsObject.totals.map((cell)=>{
+                return <td className="bg-yellow-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+            })}</tr>
+            <tr>{
+            detailsObject.adjusted.map((cell)=>{
                 return <td className="bg-yellow-200 font-bold text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
-            })}            
-        </tr>
+            })}</tr>
     </tfoot>    
     return ( <div>
     <h2 className="text-2xl mt-5 mb-2">Detailed Report</h2>
     <div className="w-full overflow-x-scroll mb-5 border rounded-md">
     <table className="table-fixed w-full font-mono">
-        {tableHead}
-        {tableBody}
-        {tableFoot}
+        {tableHead}{tableBody}{tableFoot}
     </table>
     </div>
     </div>
