@@ -2,6 +2,7 @@ import { useState } from 'react'
 import Select from 'react-select'
 import options from './base.json'
 import Summary from './Summary';
+import Details from './Details';
 function App() {
   // let [formula, setFormula] = useState([{}]);
   let [formula, setFormula] = useState([
@@ -465,6 +466,8 @@ function App() {
     event.target.select()
   }
   return (
+    <div>
+
     <div className=' bg-fuchsia-50 border border-fuchsia-700 shadow-md p-5 rounded-md flex gap-5 sm:gap-10 flex-col sm:flex-row'>
     <div className=''>
     <h2 className='text-2xl mb-2'>Formula items</h2>
@@ -487,6 +490,8 @@ function App() {
     </div>
    </div>
    <Summary formula= {formula}></Summary>
+  </div>
+  <Details formula={formula}></Details>
   </div>
   )
 }
