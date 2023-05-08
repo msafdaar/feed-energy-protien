@@ -466,8 +466,7 @@ function App() {
     event.target.select()
   }
   return (
-    <div>
-
+    <div className='w-screen max-w-3xl p-4'>
     <div className=' bg-fuchsia-50 border border-fuchsia-700 shadow-md p-5 rounded-md flex gap-5 sm:gap-10 flex-col sm:flex-row'>
     <div className=''>
     <h2 className='text-2xl mb-2'>Formula items</h2>

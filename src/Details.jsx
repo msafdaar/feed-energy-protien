@@ -77,7 +77,15 @@ function Details({formula}) {
     
     let detailsObject = calculateDetails(formula);
     console.log(detailsObject);
-    return ( "hi" );
+    return ( <div className="w-full overflow-x-auto">
+        <div className="flex basis-0">{detailsObject.header.map(cell => {return <div className="border basis-0">{cell}</div>})}</div>
+       {detailsObject.body.map((row)=>{
+        return <div className="flex basis-0">{row.map((cell)=>{
+            return <div className="border basis-0">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</div>
+        })}</div>
+       })}
+        <div className="flex basis-0">{detailsObject.totals.map(cell => {return <div className="border basis-0">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</div>})}</div>
+    </div> );
 }
 
 export default Details;
