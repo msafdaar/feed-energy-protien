@@ -33,9 +33,9 @@ function App() {
     event.target.select()
   }
   return (
-    <div className='w-screen max-w-7xl p-4 flex flex-col bg-blue-50 shadow-sm'>
-    <div className='max-w-3xl p-5 rounded-md flex gap-5 sm:gap-10 flex-col sm:flex-row'>
-    <div className=''>
+    <div className='w-screen max-w-7xl p-4 m-2 rounded-lg border shadow-sm flex flex-col bg-blue-50'>
+    <div className='max-w-7xl flex gap-5 sm:gap-10 flex-col sm:flex-row'>
+    <div className='grow'>
     <h2 className='text-2xl mb-2'>Formula items</h2>
     <div className='flex gap-1 mb-1'>
       <div className='w-4/6'>Item</div>
