@@ -33,8 +33,8 @@ function App() {
     event.target.select()
   }
   return (
-    <div className='w-screen max-w-3xl p-4'>
-    <div className=' bg-fuchsia-50 border border-fuchsia-700 shadow-md p-5 rounded-md flex gap-5 sm:gap-10 flex-col sm:flex-row'>
+    <div className='w-screen max-w-7xl p-4 flex flex-col bg-blue-50 shadow-sm'>
+    <div className='max-w-3xl p-5 rounded-md flex gap-5 sm:gap-10 flex-col sm:flex-row'>
     <div className=''>
     <h2 className='text-2xl mb-2'>Formula items</h2>
     <div className='flex gap-1 mb-1'>
@@ -51,8 +51,8 @@ function App() {
       </div>
     })}
     <div className='flex gap-2 mt-2'>
-      <button className='bg-fuchsia-200 p-1 px-2 rounded-md hover:bg-fuchsia-300 active:ring font-semibold text-sm' onClick={()=>{addItem(1)}}>Add 1 Item</button>
-      <button className='bg-fuchsia-200 p-1 px-2 rounded-md hover:bg-fuchsia-300 active:ring font-semibold text-sm' onClick={()=>{addItem(5)}}>Add 5 Items</button>
+      <button className='bg-blue-200 p-1 px-2 rounded-md hover:bg-blue-300 active:ring font-semibold text-sm shadow-inner' onClick={()=>{addItem(1)}}>Add 1 Item</button>
+      <button className='bg-blue-200 p-1 px-2 rounded-md hover:bg-blue-300 active:ring font-semibold text-sm shadow-inner' onClick={()=>{addItem(5)}}>Add 5 Items</button>
     </div>
    </div>
    <Summary formula= {formula}></Summary>

@@ -80,7 +80,7 @@ function Details({formula}) {
     let detailsObject = calculateDetails(formula);
     let tableHead = <thead>
         <tr>{detailsObject.header.map((cell)=>{
-                return <th className="bg-yellow-200 text-right pr-4 w-44">{cell}</th>
+                return <th className="bg-yellow-200 text-right pr-4 w-24 sm:w-44">{cell}</th>
             })}</tr>
     </thead>
 
@@ -105,7 +105,7 @@ function Details({formula}) {
     return ( <div>
     <h2 className="text-2xl mt-5 mb-2">Detailed Report</h2>
     <div className="w-full overflow-x-scroll mb-5 border rounded-md">
-    <table className="table-fixed w-full font-mono">
+    <table className="table-fixed w-full font-mono text-xs sm:text-base">
         {tableHead}{tableBody}{tableFoot}
     </table>
     </div>
