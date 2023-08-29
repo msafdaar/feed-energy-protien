@@ -34,9 +34,14 @@ function App() {
   }
   return (
     <div className='w-screen max-w-7xl p-4 m-2 rounded-lg border shadow-sm flex flex-col bg-blue-50'>
+    <h1 className='text-xl self-center font-mono font-bold mb-3'>Feed nutrition calculator</h1>
+    <div className='bg-green-100 p-2 font-mono mb-8'>
+      <h3 className='font-bold text-lg'>Read this first;</h3>
+      <p>The nutritional information provided on this website serves as a general guideline and may not be entirely accurate due to various external influences such as ingredient quality, climate variations, animal age, and differences in measurement techniques. It's recommended to consider these factors and exercise discretion when using this information for dietary purposes. Additionally, it is advisable to seek guidance from a qualified veterinary professional before making any significant dietary decisions based on the information provided on this website.</p>
+    </div>
     <div className='max-w-7xl flex gap-5 sm:gap-10 flex-col sm:flex-row'>
     <div className='grow'>
-    <h2 className='text-2xl mb-2'>Formula items</h2>
+    <h2 className='text-2xl mb-2'>Ingredient list</h2>
     <div className='flex gap-1 mb-1'>
       <div className='w-4/6'>Item</div>
       <div className='w-1/6'>Qty</div>
