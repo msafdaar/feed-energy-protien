@@ -37,7 +37,7 @@ function App() {
     <h1 className='text-xl self-center font-mono font-bold mb-3'>Feed nutrition calculator</h1>
     <div className='bg-green-100 p-2 font-mono mb-8'>
       <h3 className='font-bold text-lg'>Read this first;</h3>
-      <p>The nutritional information provided on this website serves as a general guideline and may not be entirely accurate due to various external influences such as ingredient quality, climate variations, animal age, and differences in measurement techniques. It's recommended to consider these factors and exercise discretion when using this information for dietary purposes. Additionally, it is advisable to seek guidance from a qualified veterinary professional before making any significant dietary decisions based on the information provided on this website.</p>
+      <p>The nutritional information on this website is a general guide and may not be completely accurate due to factors like ingredient quality, climate variations, and measurement techniques. Use discretion and consult a qualified veterinary professional before making dietary decisions based on this information.</p>
     </div>
     <div className='max-w-7xl flex gap-5 sm:gap-10 flex-col sm:flex-row'>
     <div className='grow'>
