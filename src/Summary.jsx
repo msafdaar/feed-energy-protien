@@ -1,7 +1,7 @@
 function Summary({formula}) {
     let summaryArray = makeSummary(formula);
     return ( <div className='flex flex-wrap gap-y-2 sm:flex-col '>
-    <h2 className='text-2xl mb-2 w-full'>Summary</h2>
+    <h2 className='text-2xl mb-2 w-full font-bold'>Summary</h2>
     {summaryArray.map((item, index)=>{
         return <div key={index} className="w-1/3 sm:w-full">
             <div>{item[0]}</div>

@@ -80,14 +80,14 @@ function Details({formula}) {
     let detailsObject = calculateDetails(formula);
     let tableHead = <thead>
         <tr>{detailsObject.header.map((cell)=>{
-                return <th className="bg-yellow-200 text-right pr-4 w-24 sm:w-44">{cell}</th>
+                return <th className="bg-gray-200 text-right pr-4 w-24 sm:w-44">{cell}</th>
             })}</tr>
     </thead>
 
     let tableBody = <tbody>
         {detailsObject.body.map((row)=>{
             return <tr>{row.map((cell)=>{
-                return <td className="border bg-yellow-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="border bg-gray-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })}</tr>
         })}
     </tbody>
@@ -95,15 +95,15 @@ function Details({formula}) {
     let tableFoot = <tfoot>
         <tr>{
             detailsObject.totals.map((cell)=>{
-                return <td className="bg-yellow-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="bg-gray-50 text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })}</tr>
             <tr>{
             detailsObject.adjusted.map((cell)=>{
-                return <td className="bg-yellow-200 font-bold text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
+                return <td className="bg-gray-200 font-bold text-right pr-4">{isNaN(cell) ? cell : cell===0 ? "" : cell.toFixed(2)}</td>
             })}</tr>
     </tfoot>    
     return ( <div>
-    <h2 className="text-2xl mt-5 mb-2">Detailed Report</h2>
+    <h2 className="text-2xl mt-5 mb-2 font-bold">Details</h2>
     <div className="w-full overflow-x-scroll mb-5 border rounded-md">
     <table className="table-fixed w-full font-mono text-xs sm:text-base">
         {tableHead}{tableBody}{tableFoot}
