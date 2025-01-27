@@ -38,7 +38,7 @@ function App() {
     <div className='bg-green-100 p-2 font-mono mb-8'>
       <h3 className='font-bold text-lg'>Read this first;</h3>
       <p>The nutritional information on this website is a general guide and may not be completely accurate due to factors like ingredient quality, climate variations, and measurement techniques. Use with caution and always consult a qualified veterinary professional before making dietary decisions based on this calculator.</p>
-      <p>You can visit me on <a href='https://github.com/malta-khan/' className='text-purple-500'>Github</a> for any suggestions and feedback.</p>
+      <p>Coded by <a href='https://github.com/msafdaar/' className='text-purple-500'>Safdar</a></p>
     </div>
     <div className='max-w-7xl flex gap-5 sm:gap-10 flex-col sm:flex-row justify-evenly'>
     <div className=''>
